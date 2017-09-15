@@ -50,11 +50,23 @@ function petAppend(petList) {
         var color = petList[i].color;
         var checked = petList[i].checkedin;
         var id = petList[i].id;
+
+        checkedInChecker(checked);
+
         $("#petList").append('<tr data-id="' + id +
             '"><td>' + name +
             '</td><td>' + breed +
             '</td><td>' + color +
-            '</td><td>' + checked +
+            '</td><td>' + buttonVar + //<td><button type="button" class="readyForTransferButton btn btn-success">Ready for Transfer</button></td>
             '</td><td><button class="deleteButton btn btn-danger">Delete</button></td></tr>');
+    }
+}
+var buttonVar = '';
+
+function checkedInChecker(checked) {
+    if (checked) {
+        buttonVar = '<button type="button" class="checkOutButton btn btn-success">Check Out</button>'
+    } else {
+        buttonVar = '<button type="button" class="checkInButton btn btn-success">Check In</button>'
     }
 }
