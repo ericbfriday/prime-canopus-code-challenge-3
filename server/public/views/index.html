@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="vendors/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="vendors/jquery-3.2.1.min.js"></script>
+    <script src="scripts/client.js"></script>
+
+</head>
+<header>
+    <h1>Ethan's Uptown Pet Hotel</h1>
+</header>
+<main>
+    <body>
+        <div>
+            <p>Please check in the pet.</p>
+        </div>
+        <div id="addPets">
+            <input id="petName" placeholder="Pet Name">
+            <input id="breed" placeholder="Pet Breed">
+            <input id="color" placeholder="Pet Color">
+            <input type="checkbox" name="checkedIn" value="checkedIn">Checked in?</input>
+            <button id="submitButton">Submit</button>
+        </div>
+        <table class="table table-striped" id="petTable">
+            <thead>
+                <th>Name</th>
+                <th>Breed</th>
+                <th>Color</th>
+                <th>Status</th>
+                <th>Delete</th>
+            </thead>
+            <tbody id="petList">
+            </tbody>
+        </table>
+    </body>
+</main>
+<footer>
+
+</footer>
+
+</html>
